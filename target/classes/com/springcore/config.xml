@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+	
+<!-- All of them are different way of Saying the the same things-->
+
+<!-- Setter Injection-->
+
+<!-- Setting Value as Property-->
+	<bean class="com.springcore.Student" id="Student1">
+		<property name="studentId">
+			<value>1</value>
+		</property>
+
+		<property name="studentName">
+			<value>Value as Property</value>
+		</property>
+
+		<property name="studentAddress">
+			<value>New Delhi</value>
+		</property>
+	</bean>
+
+	
+
+<!-- Setting Value as Attribute-->
+	<bean class = "com.springcore.Student" name ="Student2" >
+		<property name="studentId" value ="2" />
+		<property name="studentName" value ="Value as Attribute" />
+		<property name="studentAddress" value ="New Delhi" />
+
+	</bean>
+
+<!--How to Create New Bean-->
+	<bean class = "com.springcore.Student" name = "Student3" >
+		<property name="studentId" value="3" />
+		<property name="studentName" value="Create New Bean" />
+		<property name="studentAddress" value="New Delhi" />
+	</bean>
+	
+<!-- Setting Value as P-Schema-->
+	<bean class="com.springcore.Student" name ="Student4" p:studentId="4" p:studentName="Value as P-Schema" p:studentAddress="New Delhi"/>
+
+</beans>
