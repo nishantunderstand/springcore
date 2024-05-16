@@ -34,7 +34,6 @@
 		<property name="studentId" value ="2" />
 		<property name="studentName" value ="Value as Attribute" />
 		<property name="studentAddress" value ="New Delhi" />
-
 	</bean>
 
 <!--How to Create New Bean-->

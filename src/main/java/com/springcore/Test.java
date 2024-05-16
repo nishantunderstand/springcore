@@ -6,7 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/config.xml");
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("com/springcore/config.xml");
 		// This is way of creating Object of Student.
 		Student student1 = (Student) context.getBean("Student1");
 		System.out.println(student1);
