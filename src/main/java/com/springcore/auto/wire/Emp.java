@@ -1,6 +1,7 @@
 package com.springcore.auto.wire;
 
 public class Emp {
+
 	private Address address;
 
 	public Address getAddress() {
@@ -8,7 +9,7 @@ public class Emp {
 	}
 	
 	public void setAddress(Address address) {
-		System.out.println("Setting Value");
+		System.out.println("Setting Value By Setter");
 		this.address = address;
 	}
 
