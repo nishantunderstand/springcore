@@ -9,6 +9,7 @@ public class Test {
 		ApplicationContext context = 
 				new ClassPathXmlApplicationContext("com/springcore/config.xml");
 		// This is way of creating Object of Student.
+		// You can create as many object, as you want
 		Student student1 = (Student) context.getBean("Student1");
 		System.out.println(student1);
 		Student student2 = (Student) context.getBean("Student2");
@@ -17,6 +18,6 @@ public class Test {
 		System.out.println(student3);
 		Student student4 = (Student) context.getBean("Student4");
 		System.out.println(student4);
-		//System.out.println("Testing New Style of Coding");
+		System.out.println("Testing New Style of Coding");
 	}
 }
