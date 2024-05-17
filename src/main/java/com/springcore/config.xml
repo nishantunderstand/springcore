@@ -9,7 +9,7 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	
 <!--
-Suppose you want to add space 
+Suppose you want to add space / Comment, It will throw error
 ![BOM](https://i.imgur.com/9S1jE39.png)
 UTF-8 BOM Byter Order Mark 
 -->	
