@@ -8,6 +8,8 @@ import java.util.Set;
 public class Emp {
 	private String name;
 	
+	
+	// Collection Framework Object
 	private List<String> phones;
 	private Set<String> address;
 	private Map<String, String> courses;

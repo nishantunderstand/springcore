@@ -5,7 +5,10 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<bean class="com.springcore.collections.Emp" name="emp1">
+
 		<property name="name" value="Aakash" />
+
+<!-- Collection Framework -->
 		<property name="phones">
 			<list>
 				<value>11111</value>
@@ -34,9 +37,12 @@
 			</map>
 		</property>
 
+<!-- 
+As per chatGPT , properties doesn't have value that why you need to work like this ' 
+-->
 		<property name="prop">
 			<props>
-				<prop key="1">Aman</prop>
+				<prop key="1" >Aman</prop>
 				<prop key="2">Aman Kumar </prop>
 			</props>
 		</property>

@@ -4,22 +4,26 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!-- Constructor Injection -->
-<!-- Setting Value as Property-->
+	<!-- Constructor Injection -->
+	<!-- Setting Value as Property-->
 
-<!-- This is Added to Test Constructor Ambiguity Problem -->  
+	<!-- Working Code 
 	<bean class="com.springcore.ci.ambiguityProblem.Addition" name="add">
 		<constructor-arg value="1" type="double" index="1" />
 		<constructor-arg value="2" />
 	</bean>
-		
-</beans>
+	-->
 
+	<!-- This is Added to Test Constructor Ambiguity Problem -->
+
+	<bean class="com.springcore.ci.ambiguityProblem.Addition" name="add">
+		<constructor-arg value="1"  />
+		<constructor-arg value="2" />
+	</bean>
+
+</beans>
 <!-- Archive Code
 
-<constructor-arg>
-			<value> Java Certificate</value>
-		</constructor-arg>
-	</bean>
+
 
 -->

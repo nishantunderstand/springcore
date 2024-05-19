@@ -5,6 +5,10 @@ public class Person {
 	private int personId;
 	private Certi certi;
 	
+	public Person() {
+		super();
+		
+	}
 	
 	public Person(String name,int personId,Certi certi) {
 		this.name = name;
@@ -16,6 +20,7 @@ public class Person {
 	public String toString() {
 		return this.name + " : "+ this.personId + ": "+this.certi.name;
 	}
-	
+
+
 
 }

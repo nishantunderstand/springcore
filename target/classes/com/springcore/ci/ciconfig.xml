@@ -13,16 +13,12 @@
 
 	<bean class=" com.springcore.ci.Person" name="person">
 		<constructor-arg value="Aman" />
-		<constructor-arg value="12" />
+		<constructor-arg value="1222222" />
 		<constructor-arg ref="cer" />
 	</bean>
 </beans>
 <!-- Archive Code
 
-<constructor-arg>
-			<value> Java Certificate</value>
-		</constructor-arg>
-	</bean>
 
 
 
