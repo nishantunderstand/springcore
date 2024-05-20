@@ -6,15 +6,14 @@ import org.springframework.beans.factory.InitializingBean;
 public class Pepsi implements InitializingBean,DisposableBean {
 	private double price;
 
-	
-
-	public void afterPropertiesSet() throws Exception {
-		
+	@Override
+	public void afterPropertiesSet() throws Exception {		
 		//init Functionality
 		System.out.println("Taking Pepsit : init method");
 		
 	}
 
+	@Override
 	public void destroy() throws Exception {
 		
 		//destroy method
@@ -24,7 +23,7 @@ public class Pepsi implements InitializingBean,DisposableBean {
 	
 	public Pepsi() {
 		super();
-		// TODO Auto-generated constructor stub
+
 	}
 
 	public double getPrice() {

@@ -7,7 +7,8 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/ref/refconfig.xml");
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("com/springcore/ref/refconfig.xml");
 		B b = (B) context.getBean("bref");
 		System.out.println(b);
 

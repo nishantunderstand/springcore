@@ -5,8 +5,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Demo {
+	
 	@Value("#{1+1}")
 	private int x;
+	
 	@Value("#{2+3+4+5+7}")
 	private int y;
 
@@ -75,5 +77,4 @@ public class Demo {
 		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", name=" + name + ", isActive=" + isActive
 				+ "]";
 	}
-
 }

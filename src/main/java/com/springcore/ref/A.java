@@ -18,7 +18,7 @@ public class A {
 	}
 	public A() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	@Override
 	public String toString() {

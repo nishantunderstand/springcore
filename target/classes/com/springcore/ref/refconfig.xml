@@ -22,14 +22,8 @@
 		<property name="ob" ref="bref" />
 -->
 	</bean>
-
-
 	<!-- By P-Schemaa -->
 	<!--
-
 	<bean class="com.springcore.ref.A" name="aref" p:x="33" p:ob-ref="bref" /> 
-
 	-->
-
-
 </beans>
