@@ -11,7 +11,8 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle2/config.xml");
+		AbstractApplicationContext context = 
+				new ClassPathXmlApplicationContext("com/springcore/lifecycle2/config.xml");
 		Samosa s1 = (Samosa) context.getBean("s1");
 		System.out.println(s1);
 		// registering shutdown hook
