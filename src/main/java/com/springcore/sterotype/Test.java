@@ -1,6 +1,7 @@
 package com.springcore.sterotype;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
@@ -21,6 +22,7 @@ public class Test {
 		System.out.println(student1.hashCode());
 		System.out.println(student2.hashCode());
 		System.out.println(student3.hashCode());
+		((AbstractApplicationContext) context).close();
 
 	}
 

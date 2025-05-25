@@ -1,6 +1,7 @@
 package com.springcore.ref;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
@@ -14,6 +15,7 @@ public class Test {
 
 		A a = (A) context.getBean("aref");
 		System.out.println(a);
+		((AbstractApplicationContext) context).close();
 
 	}
 

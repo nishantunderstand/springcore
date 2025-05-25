@@ -21,6 +21,7 @@ public class Test {
 
 		Pepsi p1 = (Pepsi) context.getBean("p1");
 		System.out.println(p1);
+		((AbstractApplicationContext) context).close();
 
 	}
 

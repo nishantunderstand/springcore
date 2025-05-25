@@ -1,6 +1,7 @@
 package com.springcore.lifecycle3;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -16,6 +17,7 @@ public class NewTest {
 				new ClassPathXmlApplicationContext("com/springcore/lifecycle3/config.xml");
 		Example e1 = (Example) context.getBean("example");
 		System.out.println(e1);
+		((AbstractApplicationContext) context).close();
 	}
 
 }

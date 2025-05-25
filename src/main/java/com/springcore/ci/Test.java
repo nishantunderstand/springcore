@@ -1,6 +1,7 @@
 package com.springcore.ci;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
@@ -14,6 +15,7 @@ public class Test {
 
 		Person p = (Person) context.getBean("person");
 		System.out.println(p);
+		((AbstractApplicationContext) context).close();
 	}
 
 }

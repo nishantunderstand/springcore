@@ -1,6 +1,7 @@
 package com.springcore.spel;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.expression.Expression;
 import org.springframework.expression.spel.standard.SpelExpressionParser;
@@ -22,6 +23,7 @@ public class Test {
 		System.out.println("Spring Parser Output");
 		Expression parseExpression = temp.parseExpression("22+44");
 		System.out.println(parseExpression.getValue());
+		((AbstractApplicationContext) context).close();
 	}
 
 }

@@ -12,6 +12,7 @@ public class NewTest {
 		Example e1 = (Example) context.getBean("example");
 		context.registerShutdownHook();
 		System.out.println(e1);
+		((AbstractApplicationContext) context).close();
 	}
 
 }

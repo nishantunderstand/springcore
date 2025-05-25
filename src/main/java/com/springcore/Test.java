@@ -1,6 +1,7 @@
 package com.springcore;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
@@ -19,5 +20,6 @@ public class Test {
 		Student student4 = (Student) context.getBean("Student4");
 		System.out.println(student4);
 		System.out.println("Testing New Style of Coding");
+		((AbstractApplicationContext) context).close();
 	}
 }

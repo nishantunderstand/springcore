@@ -1,6 +1,7 @@
 package com.springcore.auto.wire;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
@@ -27,6 +28,8 @@ public class Test {
 		
 		// In autoconfig.xml, I declared only 1 Bean.
 		// Here, i am testing the concept of hashode.
+		
+		((AbstractApplicationContext) context).close();
 	}
 
 }
