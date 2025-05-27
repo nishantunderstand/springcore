@@ -1,10 +1,12 @@
 package com.springcore;
 
-// This is acting as Template
+// This is acting as 
+// Is this a POJO or JavaBean ? POJO
 public class Student {
 	private int studentId;
 	private String studentName;
 	private String studentAddress;
+	
 	
 	public int getStudentId() {
 		return studentId;
