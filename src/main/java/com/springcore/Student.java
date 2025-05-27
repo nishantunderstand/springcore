@@ -17,7 +17,7 @@ public class Student {
 		return studentName;
 	}
 	public void setStudentName(String studentName) {
-		//System.out.println("Settting StudentName");
+		//System.out.println("Setting StudentName");
 		this.studentName = studentName;
 	}
 	public String getStudentAddress() {
