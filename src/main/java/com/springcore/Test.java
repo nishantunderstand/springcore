@@ -25,6 +25,7 @@ public class Test {
 		System.out.println(student4);
 		
 		System.out.println("Testing New Style of Coding");
+		
 		((AbstractApplicationContext) context).close();
 	}
 }

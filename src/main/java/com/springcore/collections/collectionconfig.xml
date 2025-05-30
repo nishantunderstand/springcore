@@ -42,7 +42,7 @@ As per chatGPT , properties doesn't have value that why you need to work like th
 -->
 		<property name="prop">
 			<props>
-				<prop key="1" >Aman</prop>
+				<prop key="1">Aman</prop>
 				<prop key="2">Aman Kumar </prop>
 			</props>
 		</property>
