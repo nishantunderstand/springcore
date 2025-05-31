@@ -5,15 +5,12 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	<context:annotation-config/>
 
-	<bean class="com.springcore.lifecycle.Example" name="example">
-		<property name="subject" value="Math" />
-	</bean>
-		<bean class="com.springcore.lifecycle2.Samosa" name="s1" init-method="hey" destroy-method="bye">
+		<bean class="com.springcore.lifecycle.ByBean.Samosa" name="s1" init-method="hey" destroy-method="bye">
 		<property name="price" value="10" />
 	</bean>
 
 
-	<bean class="com.springcore.lifecycle2.Pepsi" name="p1">
+	<bean class="com.springcore.lifecycle.ByBean.Pepsi" name="p1">
 		<property name="price" value="45" />
 	</bean>
 

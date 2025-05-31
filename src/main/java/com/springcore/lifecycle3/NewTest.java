@@ -17,6 +17,8 @@ public class NewTest {
 				new ClassPathXmlApplicationContext("com/springcore/lifecycle3/config.xml");
 		Example e1 = (Example) context.getBean("example");
 		System.out.println(e1);
+		// ApplicationContext doesnot have context.registerShutDownHook();  //<--
+		
 		((AbstractApplicationContext) context).close();
 	}
 

@@ -5,7 +5,7 @@
 	http://www.springframework.org/schema/context/spring-context.xsd">
 	<context:annotation-config/>
 
-	<bean class="com.springcore.lifecycle.Example" name="example">
+	<bean class="com.springcore.lifecycle.ByAnnotation.Example" name="example">
 		<property name="subject" value="Math" />
 	</bean>
 

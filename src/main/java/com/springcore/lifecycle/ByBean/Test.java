@@ -1,4 +1,4 @@
-package com.springcore.lifecycle2;
+package com.springcore.lifecycle.ByBean;
 
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -10,18 +10,23 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 
 	public static void main(String[] args) {
+		System.out.println(" ===== By Bean Approach \n 1 Initializing Bean \n 2 Disposable Bean =======");
 		
 		AbstractApplicationContext context = 
-				new ClassPathXmlApplicationContext("com/springcore/lifecycle2/config.xml");
+				new ClassPathXmlApplicationContext("com/springcore/lifecycle/ByBean/config.xml");
+		
+		
 		Samosa s1 = (Samosa) context.getBean("s1");
 		System.out.println(s1);
+		
 		// registering shutdown hook
 		context.registerShutdownHook();
+		
 		System.out.println("------------------------");
 
 		Pepsi p1 = (Pepsi) context.getBean("p1");
 		System.out.println(p1);
-		((AbstractApplicationContext) context).close();
+		context.close();
 
 	}
 

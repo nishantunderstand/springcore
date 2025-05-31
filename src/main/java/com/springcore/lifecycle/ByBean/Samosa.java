@@ -1,4 +1,4 @@
-package com.springcore.lifecycle2;
+package com.springcore.lifecycle.ByBean;
 
 public class Samosa {
 	private double price;

@@ -49,11 +49,11 @@ package _toc;
  *
  * <h2>7. Bean Lifecycle</h2>
  * <ul>
- * <li>{@link com.springcore.lifecycle.Example}</li>
- * <li>{@link com.springcore.lifecycle.NewTest}</li>
- * <li>{@link com.springcore.lifecycle2.Samosa}</li>
- * <li>{@link com.springcore.lifecycle2.Pepsi}</li>
- * <li>{@link com.springcore.lifecycle2.Test}</li>
+ * <li>{@link com.springcore.lifecycle.ByAnnotation.Example}</li>
+ * <li>{@link com.springcore.lifecycle.ByAnnotation.NewTest}</li>
+ * <li>{@link com.springcore.lifecycle.ByBean.Samosa}</li>
+ * <li>{@link com.springcore.lifecycle.ByBean.Pepsi}</li>
+ * <li>{@link com.springcore.lifecycle.ByBean.Test}</li>
  * <li>{@link com.springcore.lifecycle3.Example}</li>
  * <li>{@link com.springcore.lifecycle3.NewTest}</li>
  * </ul>
