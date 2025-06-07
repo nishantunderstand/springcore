@@ -1,7 +1,7 @@
 package com.springcore.standalone.collections.autowired;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 
 //Sure! Here’s the complete code for Approach 1 (Component-Based with @Autowired):
 
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class MainApp {
     public static void main(String[] args) {
         System.out.println("//Sure! Here’s the complete code for Approach 1 (Component-Based with @Autowired):");
-    	ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+    	AbstractApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         
         Person person = context.getBean(Person.class);
 
@@ -17,5 +17,6 @@ public class MainApp {
         System.out.println("Income: " + person.getIncome());
         System.out.println("Fee Structure: " + person.getFeestructure());
         System.out.println("Properties: " + person.getProperties());
+        context.close();
     }
 }
