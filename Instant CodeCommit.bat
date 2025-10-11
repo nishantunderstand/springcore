@@ -23,7 +23,7 @@ if not exist "%repoLocation%\.git" (
 )
 
 "%gitPath%" add .
-set "commitMessage=Auto commit %date% %time%"
+set "commitMessage=LenovoBat %date% %time%"
 "%gitPath%" commit -m "%commitMessage%"
 "%gitPath%" push
 
