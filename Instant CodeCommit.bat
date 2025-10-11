@@ -31,19 +31,30 @@ REM Commit changes
 REM Push to remote
 "%gitPath%" push
 
-REM === Dynamically detect and open the current GitHub project ===
+REM === Detect and open current GitHub repo ===
 for /f "tokens=* delims=" %%r in ('"%gitPath%" remote get-url origin 2^>nul') do set "remoteUrl=%%r"
 
 if not "%remoteUrl%"=="" (
-    REM Convert SSH or HTTPS URL to clean HTTPS format
-    set "webUrl=%remoteUrl%"
-    set "webUrl=%webUrl:git@github.com:=%"
-    set "webUrl=%webUrl:https://github.com/=%"
-    set "webUrl=https://github.com/%webUrl%"
-    set "webUrl=%webUrl:.git=%"
+    set "url=%remoteUrl%"
+    
+    REM Handle SSH format: git@github.com:USER/REPO.git
+    echo %url% | find "git@" >nul
+    if %errorlevel%==0 (
+        set "url=%url:git@github.com:=%"
+        set "url=https://github.com/%url%"
+    )
 
-    echo Opening GitHub repo page: %webUrl%
-    start "" /max "C:\Program Files\Google\Chrome\Application\chrome.exe" "%webUrl%"
+    REM Handle HTTPS format: https://github.com/USER/REPO.git
+    echo %url% | find "https://github.com/" >nul
+    if %errorlevel%==0 (
+        set "url=%url%"
+    )
+
+    REM Remove .git if present
+    set "url=%url:.git=%"
+
+    echo Opening GitHub repo: %url%
+    start "" /max "C:\Program Files\Google\Chrome\Application\chrome.exe" "%url%"
 ) else (
     echo No GitHub remote found. Skipping browser open.
 )
