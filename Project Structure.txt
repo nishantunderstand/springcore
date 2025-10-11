@@ -1,4 +1,3 @@
-```md
 +---.idea
 +---.settings
 +---.vscode
@@ -71,4 +70,3 @@
     +---surefire-reports
     \---test-classes
         \---springcore
-```
