@@ -1,0 +1,74 @@
+```md
++---.idea
++---.settings
++---.vscode
++---src
+|   +---main
+|   |   +---java
+|   |   |   +---autowire
+|   |   |   +---autowire_annotation
+|   |   |   +---a_springcore
+|   |   |   +---ci
+|   |   |   |   \---ambiguityProblem
+|   |   |   +---collections
+|   |   |   +---collectionsautowired
+|   |   |   +---collectionsjavaBased
+|   |   |   +---collections_a
+|   |   |   +---java2xsd
+|   |   |   +---javaconfig
+|   |   |   +---java_Schema
+|   |   |   +---lifecycle
+|   |   |   +---lifecycleByAnnotation
+|   |   |   +---lifecycleByBean
+|   |   |   +---ref
+|   |   |   +---spel
+|   |   |   +---sterotype
+|   |   |   \---_toc
+|   |   +---resources
+|   |   \---xsd
+|   \---test
+|       +---java
+|       |   +---com
+|       |   \---springcore
+|       \---resources
+|           \---payload
+\---target
+    +---classes
+    |   +---autowire
+    |   +---autowire_annotation
+    |   +---a_springcore
+    |   +---ci
+    |   |   \---ambiguityProblem
+    |   +---collections
+    |   +---collectionsautowired
+    |   +---collectionsjavaBased
+    |   +---collections_a
+    |   +---java2xsd
+    |   +---javaconfig
+    |   +---java_Schema
+    |   +---lifecycle
+    |   +---lifecycleByAnnotation
+    |   +---lifecycleByBean
+    |   +---META-INF
+    |   |   \---maven
+    |   |       \---com.springcore.standalone.collections.springcore
+    |   |           \---springcore
+    |   +---ref
+    |   +---spel
+    |   +---sterotype
+    |   \---_toc
+    +---generated-sources
+    |   \---annotations
+    +---generated-test-sources
+    |   \---test-annotations
+    +---maven-archiver
+    +---maven-status
+    |   \---maven-compiler-plugin
+    |       +---compile
+    |       |   \---default-compile
+    |       \---testCompile
+    |           \---default-testCompile
+    +---surefire-reports
+    \---test-classes
+        \---springcore
+```
