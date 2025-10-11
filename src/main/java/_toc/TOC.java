@@ -1,21 +1,21 @@
 package _toc;
 
-import springcore.a_core.Student;
-import springcore.a_core.Test;
-import springcore.autowire.annotation.Address;
-import springcore.autowire.annotation.Emp;
-import springcore.ci.Certi;
-import springcore.ci.ambiguityProblem.Addition;
-import springcore.javaconfig.DemoMain;
-import springcore.javaconfig.JavaConfig;
-import springcore.lifecycle.ByAnnotation.Example;
-import springcore.lifecycle.ByAnnotation.NewTest;
-import springcore.lifecycle.ByBean.Pepsi;
-import springcore.lifecycle.ByBean.Samosa;
-import springcore.ref.A;
-import springcore.ref.B;
-import springcore.spel.Demo;
-import springcore.standalone.collections.Person;
+import a_springcore.Student;
+import a_springcore.Test;
+import autowire_annotation.Address;
+import autowire_annotation.Emp;
+import ci.Certi;
+import ci.ambiguityProblem.Addition;
+import collections_a.Person;
+import javaconfig.DemoMain;
+import javaconfig.JavaConfig;
+import lifecycleByAnnotation.Example;
+import lifecycleByAnnotation.NewTest;
+import lifecycleByBean.Pepsi;
+import lifecycleByBean.Samosa;
+import ref.A;
+import ref.B;
+import spel.Demo;
 
 /**
  * === Spring Project Table of Contents ===
@@ -30,36 +30,36 @@ import springcore.standalone.collections.Person;
  * <h2>2. Spring Dependency Injection by Constructor</h2>
  * <ul>
  * <li>{@link Certi}</li>
- * <li>{@link springcore.ci.Person}</li>
- * <li>{@link springcore.ci.Test}</li>
+ * <li>{@link ci.Person}</li>
+ * <li>{@link ci.Test}</li>
  * </ul>
  *
  * <h2>3. Constructor Injection - Ambiguity Problem</h2>
  * <ul>
  * <li>{@link Addition}</li>
- * <li>{@link springcore.ci.ambiguityProblem.Test}</li>
+ * <li>{@link ci.ambiguityProblem.Test}</li>
  * </ul>
  *
  * <h2>4. Autowiring</h2>
  * <ul>
- * <li>{@link springcore.autowire.Address}</li>
- * <li>{@link springcore.autowire.Emp}</li>
- * <li>{@link springcore.autowire.Test}</li>
+ * <li>{@link autowire.Address}</li>
+ * <li>{@link autowire.Emp}</li>
+ * <li>{@link autowire.Test}</li>
  * <li>{@link Address}</li>
  * <li>{@link Emp}</li>
- * <li>{@link springcore.autowire.annotation.Test}</li>
+ * <li>{@link autowire_annotation.Test}</li>
  * </ul>
  *
  * <h2>5. Collections</h2>
  * <ul>
- * <li>{@link springcore.collections.Emp}</li>
- * <li>{@link springcore.collections.Test}</li>
+ * <li>{@link collections.Emp}</li>
+ * <li>{@link collections.Test}</li>
  * </ul>
  *
  * <h2>6. Java-based Configuration</h2>
  * <ul>
- * <li>{@link springcore.javaconfig.Samosa}</li>
- * <li>{@link springcore.javaconfig.Student}</li>
+ * <li>{@link javaconfig.Samosa}</li>
+ * <li>{@link javaconfig.Student}</li>
  * <li>{@link JavaConfig}</li>
  * <li>{@link DemoMain}</li>
  * </ul>
@@ -70,34 +70,34 @@ import springcore.standalone.collections.Person;
  * <li>{@link NewTest}</li>
  * <li>{@link Samosa}</li>
  * <li>{@link Pepsi}</li>
- * <li>{@link springcore.lifecycle.ByBean.Test}</li>
- * <li>{@link springcore.lifecycle3.Example}</li>
- * <li>{@link springcore.lifecycle3.NewTest}</li>
+ * <li>{@link lifecycleByBean.Test}</li>
+ * <li>{@link lifecycle.Example}</li>
+ * <li>{@link lifecycle.NewTest}</li>
  * </ul>
  *
  * <h2>8. Reference Injection</h2>
  * <ul>
  * <li>{@link A}</li>
  * <li>{@link B}</li>
- * <li>{@link springcore.ref.Test}</li>
+ * <li>{@link ref.Test}</li>
  * </ul>
  *
  * <h2>9. SpEL (Spring Expression Language)</h2>
  * <ul>
  * <li>{@link Demo}</li>
- * <li>{@link springcore.spel.Test}</li>
+ * <li>{@link spel.Test}</li>
  * </ul>
  *
  * <h2>10. Standalone Collections</h2>
  * <ul>
  * <li>{@link Person}</li>
- * <li>{@link springcore.standalone.collections.Test}</li>
+ * <li>{@link collections_a.Test}</li>
  * </ul>
  *
  * <h2>11. Stereotype Annotations</h2>
  * <ul>
- * <li>{@link springcore.sterotype.Student}</li>
- * <li>{@link springcore.sterotype.Test}</li>
+ * <li>{@link sterotype.Student}</li>
+ * <li>{@link sterotype.Test}</li>
  * </ul>
  *
  * <h2>12. XML to Java Object (JAXB)</h2>

@@ -1,132 +1,132 @@
 ```
 +---src
-¦   +---main
-¦   ¦   +---java
-¦   ¦   ¦   +---com
-¦   ¦   ¦   ¦   +---springcore
-¦   ¦   ¦   ¦       ¦   config.xml
-¦   ¦   ¦   ¦       ¦   Student.java
-¦   ¦   ¦   ¦       ¦   Test.java
-¦   ¦   ¦   ¦       ¦   
-¦   ¦   ¦   ¦       +---auto
-¦   ¦   ¦   ¦       ¦   +---wire
-¦   ¦   ¦   ¦       ¦       ¦   Address.java
-¦   ¦   ¦   ¦       ¦       ¦   autoconfig.xml
-¦   ¦   ¦   ¦       ¦       ¦   Emp.java
-¦   ¦   ¦   ¦       ¦       ¦   Test.java
-¦   ¦   ¦   ¦       ¦       ¦   
-¦   ¦   ¦   ¦       ¦       +---annotation
-¦   ¦   ¦   ¦       ¦               Address.java
-¦   ¦   ¦   ¦       ¦               autoconfig.xml
-¦   ¦   ¦   ¦       ¦               Emp.java
-¦   ¦   ¦   ¦       ¦               Test.java
-¦   ¦   ¦   ¦       ¦               
-¦   ¦   ¦   ¦       +---ci
-¦   ¦   ¦   ¦       ¦   ¦   Certi.java
-¦   ¦   ¦   ¦       ¦   ¦   ciconfig.xml
-¦   ¦   ¦   ¦       ¦   ¦   Person.java
-¦   ¦   ¦   ¦       ¦   ¦   Test.java
-¦   ¦   ¦   ¦       ¦   ¦   TestWithTryAutocloseable.java
-¦   ¦   ¦   ¦       ¦   ¦   
-¦   ¦   ¦   ¦       ¦   +---ambiguityProblem
-¦   ¦   ¦   ¦       ¦           Addition.java
-¦   ¦   ¦   ¦       ¦           ciconfig.xml
-¦   ¦   ¦   ¦       ¦           Test.java
-¦   ¦   ¦   ¦       ¦           
-¦   ¦   ¦   ¦       +---collections
-¦   ¦   ¦   ¦       ¦       collectionconfig.xml
-¦   ¦   ¦   ¦       ¦       Emp.java
-¦   ¦   ¦   ¦       ¦       Test.java
-¦   ¦   ¦   ¦       ¦       
-¦   ¦   ¦   ¦       +---javaconfig
-¦   ¦   ¦   ¦       ¦       DemoMain.java
-¦   ¦   ¦   ¦       ¦       JavaConfig.java
-¦   ¦   ¦   ¦       ¦       Samosa.java
-¦   ¦   ¦   ¦       ¦       Student.java
-¦   ¦   ¦   ¦       ¦       
-¦   ¦   ¦   ¦       +---lifecycle
-¦   ¦   ¦   ¦       ¦   +---ByAnnotation
-¦   ¦   ¦   ¦       ¦   ¦       config.xml
-¦   ¦   ¦   ¦       ¦   ¦       Example.java
-¦   ¦   ¦   ¦       ¦   ¦       NewTest.java
-¦   ¦   ¦   ¦       ¦   ¦       
-¦   ¦   ¦   ¦       ¦   +---ByBean
-¦   ¦   ¦   ¦       ¦           config.xml
-¦   ¦   ¦   ¦       ¦           Pepsi.java
-¦   ¦   ¦   ¦       ¦           Samosa.java
-¦   ¦   ¦   ¦       ¦           Test.java
-¦   ¦   ¦   ¦       ¦           
-¦   ¦   ¦   ¦       +---lifecycle3
-¦   ¦   ¦   ¦       ¦       config.xml
-¦   ¦   ¦   ¦       ¦       Example.java
-¦   ¦   ¦   ¦       ¦       NewTest.java
-¦   ¦   ¦   ¦       ¦       
-¦   ¦   ¦   ¦       +---ref
-¦   ¦   ¦   ¦       ¦       A.java
-¦   ¦   ¦   ¦       ¦       B.java
-¦   ¦   ¦   ¦       ¦       refconfig.xml
-¦   ¦   ¦   ¦       ¦       Test.java
-¦   ¦   ¦   ¦       ¦       
-¦   ¦   ¦   ¦       +---spel
-¦   ¦   ¦   ¦       ¦       config.xml
-¦   ¦   ¦   ¦       ¦       Demo.java
-¦   ¦   ¦   ¦       ¦       Test.java
-¦   ¦   ¦   ¦       ¦       
-¦   ¦   ¦   ¦       +---standalone
-¦   ¦   ¦   ¦       ¦   +---collections
-¦   ¦   ¦   ¦       ¦       ¦   aloneconfig.xml
-¦   ¦   ¦   ¦       ¦       ¦   Person.java
-¦   ¦   ¦   ¦       ¦       ¦   Test.java
-¦   ¦   ¦   ¦       ¦       ¦   
-¦   ¦   ¦   ¦       ¦       +---autowired
-¦   ¦   ¦   ¦       ¦       ¦       AppConfig.java
-¦   ¦   ¦   ¦       ¦       ¦       MainApp.java
-¦   ¦   ¦   ¦       ¦       ¦       Person.java
-¦   ¦   ¦   ¦       ¦       ¦       
-¦   ¦   ¦   ¦       ¦       +---javaBased
-¦   ¦   ¦   ¦       ¦               AppConfig.java
-¦   ¦   ¦   ¦       ¦               Course.java
-¦   ¦   ¦   ¦       ¦               MainApp.java
-¦   ¦   ¦   ¦       ¦               Student.java
-¦   ¦   ¦   ¦       ¦               
-¦   ¦   ¦   ¦       +---sterotype
-¦   ¦   ¦   ¦               steroconfig.xml
-¦   ¦   ¦   ¦               Student.java
-¦   ¦   ¦   ¦               Test.java
-¦   ¦   ¦   ¦               
-¦   ¦   ¦   +---java2xsd
-¦   ¦   ¦   ¦       Department.java
-¦   ¦   ¦   ¦       Employee.java
-¦   ¦   ¦   ¦       ObjectFactory.java
-¦   ¦   ¦   ¦       pom.xml
-¦   ¦   ¦   ¦       Student.java
-¦   ¦   ¦   ¦       
-¦   ¦   ¦   +---java_Schema
-¦   ¦   ¦   ¦       employee.xsd
-¦   ¦   ¦   ¦       ObjectFactory.java
-¦   ¦   ¦   ¦       Student.java
-¦   ¦   ¦   ¦       student.xsd
-¦   ¦   ¦   ¦       
-¦   ¦   ¦   +---_toc
-¦   ¦   ¦           TOC.java
-¦   ¦   ¦           
-¦   ¦   +---resources
-¦   ¦   ¦       Beans.xml
-¦   ¦   ¦       ciconfig.xml
-¦   ¦   ¦       config.xml
-¦   ¦   ¦       springcore_config.xml
-¦   ¦   ¦       
-¦   ¦   +---xsd
-¦   ¦           schema1.xsd
-¦   ¦           
-¦   +---resources
-¦   +---test
-¦       +---java
-¦       ¦   +---com
-¦       ¦       +---springcore
-¦       ¦               SpringCoreTest.java
-¦       ¦               SpringCoreTestMay28.java
-¦       ¦               
-¦       +---resources
-¦           +---payload
+ï¿½   +---main
+ï¿½   ï¿½   +---java
+ï¿½   ï¿½   ï¿½   +---com
+ï¿½   ï¿½   ï¿½   ï¿½   +---springcore
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   config.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   Student.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   
+ï¿½   ï¿½   ï¿½   ï¿½       +---auto
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   +---wire
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½   Address.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½   autoconfig.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½   Emp.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½   Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½   
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       +---annotation
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               Address.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               autoconfig.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               Emp.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½       +---ci
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½   Certi.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½   ciconfig.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½   Person.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½   Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½   TestWithTryAutocloseable.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½   
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   +---ambiguityProblem
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           Addition.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           ciconfig.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           
+ï¿½   ï¿½   ï¿½   ï¿½       +---collections
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       collectionconfig.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       Emp.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½       +---javaconfig
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       DemoMain.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       JavaConfig.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       Samosa.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       Student.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½       +---lifecycle
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   +---ByAnnotation
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½       config.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½       Example.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½       NewTest.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   +---ByBean
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           config.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           Pepsi.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           Samosa.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½           
+ï¿½   ï¿½   ï¿½   ï¿½       +---lifecycle3
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       config.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       Example.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       NewTest.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½       +---ref
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       A.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       B.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       refconfig.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½       +---spel
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       config.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       Demo.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½       +---standalone
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½   +---collections
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½   aloneconfig.xml
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½   Person.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½   Test.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½   
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       +---autowired
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½       AppConfig.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½       MainApp.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½       Person.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       ï¿½       
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½       +---javaBased
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               AppConfig.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               Course.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               MainApp.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               Student.java
+ï¿½   ï¿½   ï¿½   ï¿½       ï¿½               
+ï¿½   ï¿½   ï¿½   ï¿½       +---sterotype_a
+ï¿½   ï¿½   ï¿½   ï¿½               steroconfig.xml
+ï¿½   ï¿½   ï¿½   ï¿½               Student.java
+ï¿½   ï¿½   ï¿½   ï¿½               Test.java
+ï¿½   ï¿½   ï¿½   ï¿½               
+ï¿½   ï¿½   ï¿½   +---java2xsd
+ï¿½   ï¿½   ï¿½   ï¿½       Department.java
+ï¿½   ï¿½   ï¿½   ï¿½       Employee.java
+ï¿½   ï¿½   ï¿½   ï¿½       ObjectFactory.java
+ï¿½   ï¿½   ï¿½   ï¿½       pom.xml
+ï¿½   ï¿½   ï¿½   ï¿½       Student.java
+ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   +---java_Schema
+ï¿½   ï¿½   ï¿½   ï¿½       employee.xsd
+ï¿½   ï¿½   ï¿½   ï¿½       ObjectFactory.java
+ï¿½   ï¿½   ï¿½   ï¿½       Student.java
+ï¿½   ï¿½   ï¿½   ï¿½       student.xsd
+ï¿½   ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   ï¿½   +---_toc
+ï¿½   ï¿½   ï¿½           TOC.java
+ï¿½   ï¿½   ï¿½           
+ï¿½   ï¿½   +---resources
+ï¿½   ï¿½   ï¿½       Beans.xml
+ï¿½   ï¿½   ï¿½       ciconfig.xml
+ï¿½   ï¿½   ï¿½       config.xml
+ï¿½   ï¿½   ï¿½       springcore_config.xml
+ï¿½   ï¿½   ï¿½       
+ï¿½   ï¿½   +---xsd
+ï¿½   ï¿½           schema1.xsd
+ï¿½   ï¿½           
+ï¿½   +---resources
+ï¿½   +---test
+ï¿½       +---java
+ï¿½       ï¿½   +---com
+ï¿½       ï¿½       +---springcore
+ï¿½       ï¿½               SpringCoreTest.java
+ï¿½       ï¿½               SpringCoreTestMay28.java
+ï¿½       ï¿½               
+ï¿½       +---resources
+ï¿½           +---payload
 ```
