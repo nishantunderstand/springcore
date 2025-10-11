@@ -20,7 +20,7 @@ UTF-8 BOM Byter Order Mark
 
 <!-- You can use name or id , name is given more priority then id , As per Spring Offical Documentation -->
 <!-- Setting Value as Property-->
-	<bean class="com.springcore.core.Student" id="Student1">
+	<bean class="com.springcore.a_core.Student" id="Student1">
 		<property name="studentId">
 			<value>1</value>
 		</property>
@@ -35,7 +35,7 @@ UTF-8 BOM Byter Order Mark
 	</bean>	
 
 <!-- Setting Value as Attribute-->
-	<bean class = "com.springcore.core.Student" name ="Student2" >
+	<bean class = "com.springcore.a_core.Student" name ="Student2" >
 		<property name="studentId" value ="2" />
 		<property name="studentName" value ="Value as Attribute" />
 		<property name="studentAddress" value ="New Delhi" />
@@ -43,13 +43,13 @@ UTF-8 BOM Byter Order Mark
 	
 
 <!--How to Create New Bean-->
-	<bean class = "com.springcore.core.Student" name = "Student3" >
+	<bean class = "com.springcore.a_core.Student" name = "Student3" >
 		<property name="studentId" value="3" />
 		<property name="studentName" value="Create New Bean" />
 		<property name="studentAddress" value="New Delhi" />
 	</bean>
 	
 <!-- Setting Value as P-Schema-->
-	<bean class="com.springcore.core.Student" name ="Student4" p:studentId="4" p:studentName="Value as P-Schema" p:studentAddress="New Delhi"/>
+	<bean class="com.springcore.a_core.Student" name ="Student4" p:studentId="4" p:studentName="Value as P-Schema" p:studentAddress="New Delhi"/>
 
 </beans>

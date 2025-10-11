@@ -1,4 +1,4 @@
-package com.springcore.core;
+package com.springcore.a_core;
 
 // This is acting as 
 // Is this a POJO or JavaBean ? POJO

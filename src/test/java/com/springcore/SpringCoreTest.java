@@ -1,6 +1,6 @@
 package com.springcore;
 
-import com.springcore.core.Student;
+import com.springcore.a_core.Student;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

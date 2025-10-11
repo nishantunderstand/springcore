@@ -1,4 +1,4 @@
-package com.springcore.core;
+package com.springcore.a_core;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;

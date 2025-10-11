@@ -1,7 +1,7 @@
 package _toc;
 
-import com.springcore.core.Student;
-import com.springcore.core.Test;
+import com.springcore.a_core.Student;
+import com.springcore.a_core.Test;
 
 /**
  * === Spring Project Table of Contents ===

@@ -7,7 +7,7 @@
    http://www.springframework.org/schema/context/spring-context.xsd 
  ">
  
- <bean id="student"	class = "com.springcore.core.Student">
+ <bean id="student"	class = "com.springcore.a_core.Student">
  		<property name="studentId">
  			<value>1</value>
  		</property> 
