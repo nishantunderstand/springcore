@@ -1,4 +1,4 @@
-package com.springcore.auto.wire.annotation;
+package com.springcore.autowire.annotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;

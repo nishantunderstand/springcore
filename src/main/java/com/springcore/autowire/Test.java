@@ -1,4 +1,4 @@
-package com.springcore.auto.wire;
+package com.springcore.autowire;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;

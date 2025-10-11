@@ -1,13 +1,16 @@
 package _toc;
 
+import com.springcore.core.Student;
+import com.springcore.core.Test;
+
 /**
  * === Spring Project Table of Contents ===
  *
  * <h2>1. Spring Core</h2>
  * <ul>
- * <li>{@link com.springcore.Student}</li>
+ * <li>{@link Student}</li>
  * <li>{@link com.springcore.SpringCoreTestMay28}</li>
- * <li>{@link com.springcore.Test}</li>
+ * <li>{@link Test}</li>
  * </ul>
  *
  * <h2>2. Spring Dependency Injection by Constructor</h2>
@@ -25,12 +28,12 @@ package _toc;
  *
  * <h2>4. Autowiring</h2>
  * <ul>
- * <li>{@link com.springcore.auto.wire.Address}</li>
- * <li>{@link com.springcore.auto.wire.Emp}</li>
- * <li>{@link com.springcore.auto.wire.Test}</li>
- * <li>{@link com.springcore.auto.wire.annotation.Address}</li>
- * <li>{@link com.springcore.auto.wire.annotation.Emp}</li>
- * <li>{@link com.springcore.auto.wire.annotation.Test}</li>
+ * <li>{@link com.springcore.autowire.Address}</li>
+ * <li>{@link com.springcore.autowire.Emp}</li>
+ * <li>{@link com.springcore.autowire.Test}</li>
+ * <li>{@link com.springcore.autowire.annotation.Address}</li>
+ * <li>{@link com.springcore.autowire.annotation.Emp}</li>
+ * <li>{@link com.springcore.autowire.annotation.Test}</li>
  * </ul>
  *
  * <h2>5. Collections</h2>

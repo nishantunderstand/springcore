@@ -1,4 +1,4 @@
-package com.springcore;
+package com.springcore.core;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
@@ -8,14 +8,18 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 	public static void main(String[] args) {
 		System.out.println("Hello World!");
-		// Either you can pass Relative Address
+
+    // Either you can pass Relative Address
 		// Paste the config.xml in resources Folder 
 		// It will Automatically read it.
-		ApplicationContext context = 
+
+    ApplicationContext context =
 				new ClassPathXmlApplicationContext("springcore_config.xml");
-		// This is way of creating Object of Student.
+
+    // This is way of creating Object of Student.
 		// You can create as many object, as you want
-		Student student1 = (Student) context.getBean("Student1");
+
+    Student student1 = (Student) context.getBean("Student1");
 		System.out.println(student1);
 		
 		Student student2 = (Student) context.getBean("Student2");
@@ -27,7 +31,7 @@ public class Test {
 		Student student4 = (Student) context.getBean("Student4");
 		System.out.println(student4);
 		
-		System.out.println("Testing New Style of Coding");
+		System.out.println("Testing New Style of Coding !!! Java Spring Core ");
 		
 		((AbstractApplicationContext) context).close();
 	}
