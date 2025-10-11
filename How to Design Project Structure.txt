@@ -1,0 +1,6 @@
+tree                          # Basic directory structure only
+tree /F                       # Folders + Files (most common)
+tree /A                       # Use ASCII characters instead of extended
+tree /F /A                    # Files + ASCII format
+tree C:\Path /F               # Specific path with files
+tree /F > structure.txt       # Save to file
