@@ -12,6 +12,7 @@ cd /d "%repoLocation%"
 
 REM Initialize Git repo if not already present
 if not exist "%repoLocation%\.git" (
+    echo Initializing new Git repository...
     "%gitPath%" init
 )
 
@@ -29,6 +30,23 @@ REM Commit changes
 
 REM Push to remote
 "%gitPath%" push
+
+REM === Dynamically detect and open the current GitHub project ===
+for /f "tokens=* delims=" %%r in ('"%gitPath%" remote get-url origin 2^>nul') do set "remoteUrl=%%r"
+
+if not "%remoteUrl%"=="" (
+    REM Convert SSH or HTTPS URL to clean HTTPS format
+    set "webUrl=%remoteUrl%"
+    set "webUrl=%webUrl:git@github.com:=%"
+    set "webUrl=%webUrl:https://github.com/=%"
+    set "webUrl=https://github.com/%webUrl%"
+    set "webUrl=%webUrl:.git=%"
+
+    echo Opening GitHub repo page: %webUrl%
+    start "" /max "C:\Program Files\Google\Chrome\Application\chrome.exe" "%webUrl%"
+) else (
+    echo No GitHub remote found. Skipping browser open.
+)
 
 echo ==== End ====
 exit
