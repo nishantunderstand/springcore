@@ -1,4 +1,4 @@
-package ci;
+package f_ConstructorInjection;
 
 public class Person {
 	private String name;

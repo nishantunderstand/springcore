@@ -5,8 +5,8 @@ import a_springcore.Test;
 import autowire_annotation.Address;
 import autowire_annotation.Emp;
 import c_alonecollections.Person;
-import ci.Certi;
-import ci.ambiguityProblem.Addition;
+import f_ConstructorInjection.Certi;
+import f_ConstructorInjectionAmbiguityProblem.Addition;
 import javaconfig.DemoMain;
 import javaconfig.JavaConfig;
 import lifecycleByAnnotation.Example;
@@ -30,14 +30,14 @@ import spel.Demo;
  * <h2>2. Spring Dependency Injection by Constructor</h2>
  * <ul>
  * <li>{@link Certi}</li>
- * <li>{@link ci.Person}</li>
- * <li>{@link ci.Test}</li>
+ * <li>{@link f_ConstructorInjection.Person}</li>
+ * <li>{@link f_ConstructorInjection.Test}</li>
  * </ul>
  *
  * <h2>3. Constructor Injection - Ambiguity Problem</h2>
  * <ul>
  * <li>{@link Addition}</li>
- * <li>{@link ci.ambiguityProblem.Test}</li>
+ * <li>{@link f_ConstructorInjectionAmbiguityProblem.Test}</li>
  * </ul>
  *
  * <h2>4. Autowiring</h2>

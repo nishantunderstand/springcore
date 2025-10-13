@@ -1,4 +1,4 @@
-package ci.ambiguityProblem;
+package f_ConstructorInjectionAmbiguityProblem;
 
 public class Addition {
 	private int a;
@@ -20,13 +20,13 @@ public class Addition {
 	 */
 	
 	
-	/**
+	
 	public Addition(String a, String b) {
 		this.a =Integer.parseInt(a);
 		this.b =Integer.parseInt(b);
 		System.out.println("Constructor : String , String");
 	}
-	*/
+	
 	
 	public Addition(int a,int b) {
 		this.a=a;

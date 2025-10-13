@@ -1,29 +1,25 @@
-package e_collectionsautowired;
+package e2_collectionsautowired;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "e_collectionsautowired")
 public class AppConfig {
 
     @Bean
     public List<String> friends() {
-        return new LinkedList<>(Arrays.asList("First", "Second", "Third", "Fourth", "Fifth", "Sixth"));
+        return Arrays.asList("First", "Second", "Third", "Fourth", "Fifth", "Sixth");
     }
 
     @Bean
     public Set<String> income() {
-        return new HashSet<>(Arrays.asList("2999", "9000", "800"));
+        return Set.of("2999", "9000", "800");
     }
 
     @Bean
@@ -43,5 +39,12 @@ public class AppConfig {
         props.setProperty("User", "Me");
         props.setProperty("Student", "Value");
         return props;
+    }
+
+    // Person bean defined here
+    @Bean
+    public Person person(List<String> friends, Set<String> income,
+                         Map<String, Integer> feestructure, Properties properties) {
+        return new Person(friends, income, feestructure, properties);
     }
 }

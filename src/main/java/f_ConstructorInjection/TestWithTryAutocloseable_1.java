@@ -1,9 +1,9 @@
-package ci;
+package f_ConstructorInjection;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class TestWithTryAutocloseable {
-
+public class TestWithTryAutocloseable_1 {
+    // Working
 	public static void main(String[] args) {
 		try(ClassPathXmlApplicationContext ctx = 
 				new ClassPathXmlApplicationContext("ciconfig.xml")) {
@@ -28,5 +28,5 @@ public static void main(String[] args) {
 	}
 
 -- Wrong as ApplicationContext Don't Implement AutoCloseable
-
+-- Try AbstractApplicationContext
 */

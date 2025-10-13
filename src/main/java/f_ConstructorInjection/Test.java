@@ -1,4 +1,4 @@
-package ci;
+package f_ConstructorInjection;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
@@ -11,7 +11,7 @@ public class Test {
 	public static void main(String[] args) {
 		
 		ApplicationContext context = 
-				new ClassPathXmlApplicationContext("ci/ciconfig.xml");
+				new ClassPathXmlApplicationContext("ciconfig.xml");
 
 		Person p = (Person) context.getBean("person");
 		System.out.println(p);
