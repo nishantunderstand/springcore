@@ -4,9 +4,9 @@ import a_springcore.Student;
 import a_springcore.Test;
 import autowire_annotation.Address;
 import autowire_annotation.Emp;
+import c_alonecollections.Person;
 import ci.Certi;
 import ci.ambiguityProblem.Addition;
-import collections_a.Person;
 import javaconfig.DemoMain;
 import javaconfig.JavaConfig;
 import lifecycleByAnnotation.Example;
@@ -52,8 +52,8 @@ import spel.Demo;
  *
  * <h2>5. Collections</h2>
  * <ul>
- * <li>{@link collections.Emp}</li>
- * <li>{@link collections.Test}</li>
+ * <li>{@link b_collections.Emp}</li>
+ * <li>{@link b_collections.Test}</li>
  * </ul>
  *
  * <h2>6. Java-based Configuration</h2>
@@ -91,7 +91,7 @@ import spel.Demo;
  * <h2>10. Standalone Collections</h2>
  * <ul>
  * <li>{@link Person}</li>
- * <li>{@link collections_a.Test}</li>
+ * <li>{@link c_alonecollections.Test}</li>
  * </ul>
  *
  * <h2>11. Stereotype Annotations</h2>

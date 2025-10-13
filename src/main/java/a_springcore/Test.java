@@ -36,8 +36,3 @@ public class Test {
 		((AbstractApplicationContext) context).close();
 	}
 }
-
-/**
- * Code Refactoring is good.
- * Then you need to update the xml as it is dependend on them.
- */

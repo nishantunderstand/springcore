@@ -1,4 +1,4 @@
-package collectionsautowired;
+package e_collectionsautowired;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;

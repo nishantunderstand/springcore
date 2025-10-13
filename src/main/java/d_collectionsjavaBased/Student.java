@@ -1,4 +1,4 @@
-package collectionsjavaBased;
+package d_collectionsjavaBased;
 
 public class Student {
     private Course course;

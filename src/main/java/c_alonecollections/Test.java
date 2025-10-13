@@ -1,4 +1,4 @@
-package collections_a;
+package c_alonecollections;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
@@ -6,8 +6,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
 	public static void main(String[] args) {
-		ApplicationContext context = new ClassPathXmlApplicationContext(
-      "springcore/standalone/collections/aloneconfig.xml");
+		//ApplicationContext context = new ClassPathXmlApplicationContext("springcore/standalone/collections/aloneconfig.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("aloneconfig.xml");
 
 		Person person1 = (Person) context.getBean("person1");
 		

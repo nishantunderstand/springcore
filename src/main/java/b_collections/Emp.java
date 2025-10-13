@@ -1,4 +1,4 @@
-package collections;
+package b_collections;
 
 import java.util.List;
 import java.util.Map;

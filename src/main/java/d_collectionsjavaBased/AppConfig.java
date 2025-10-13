@@ -1,4 +1,4 @@
-package collectionsjavaBased;
+package d_collectionsjavaBased;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

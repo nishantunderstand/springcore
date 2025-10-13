@@ -4,16 +4,16 @@
 	http://www.springframework.org/schema/context
 	http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="collections.Emp" name="emp1">
+	<bean class="b_collections.Emp" name="emp1"> <!-- UPDATEME-->
 
 		<property name="name" value="Aakash" />
 
 <!-- Collection Framework -->
 		<property name="phones">
 			<list>
-				<value>11111</value>
-				<value>22222</value>
-				<value>33333</value>
+				<value>1</value>
+				<value>22</value>
+				<value>333</value>
 				<value>44444</value>
 				<!-- How to Insert Null Value in List-->
 				<null />

@@ -1,4 +1,4 @@
-package collections_a;
+package c_alonecollections;
 
 import java.util.List;
 import java.util.Map;

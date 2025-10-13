@@ -1,4 +1,4 @@
-package collectionsautowired;
+package e_collectionsautowired;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -8,12 +8,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
-
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-//@ComponentScan(basePackages = "com.springcore.standalone.collections.autowired")
+@ComponentScan(basePackages = "e_collectionsautowired")
 public class AppConfig {
 
     @Bean
