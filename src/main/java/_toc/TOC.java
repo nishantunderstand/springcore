@@ -2,20 +2,18 @@ package _toc;
 
 import a_springcore.Student;
 import a_springcore.Test;
-import autowire_annotation.Address;
-import autowire_annotation.Emp;
 import c_alonecollections.Person;
 import f_ConstructorInjection.Certi;
 import f_ConstructorInjectionAmbiguityProblem.Addition;
-import javaconfig.DemoMain;
-import javaconfig.JavaConfig;
-import lifecycleByAnnotation.Example;
-import lifecycleByAnnotation.NewTest;
-import lifecycleByBean.Pepsi;
-import lifecycleByBean.Samosa;
+import g_autowire_annotation.Address;
+import g_autowire_annotation.Emp;
+import h_lifecycleByAnnotation.Example;
+import h_lifecycleByAnnotation.NewTest;
+import h_lifecycleByBean.Pepsi;
+import h_lifecycleByBean.Samosa;
+import i_javaconfig.JavaConfig;
 import ref.A;
 import ref.B;
-import spel.Demo;
 
 /**
  * === Spring Project Table of Contents ===
@@ -42,12 +40,12 @@ import spel.Demo;
  *
  * <h2>4. Autowiring</h2>
  * <ul>
- * <li>{@link autowire.Address}</li>
- * <li>{@link autowire.Emp}</li>
- * <li>{@link autowire.Test}</li>
+ * <li>{@link g_autowire.Address}</li>
+ * <li>{@link g_autowire.Emp}</li>
+ * <li>{@link g_autowire.Test}</li>
  * <li>{@link Address}</li>
  * <li>{@link Emp}</li>
- * <li>{@link autowire_annotation.Test}</li>
+ * <li>{@link g_autowire_annotation.Test}</li>
  * </ul>
  *
  * <h2>5. Collections</h2>
@@ -58,8 +56,8 @@ import spel.Demo;
  *
  * <h2>6. Java-based Configuration</h2>
  * <ul>
- * <li>{@link javaconfig.Samosa}</li>
- * <li>{@link javaconfig.Student}</li>
+ * <li>{@link i_javaconfig.Samosa}</li>
+ * <li>{@link i_javaconfig.Student}</li>
  * <li>{@link JavaConfig}</li>
  * <li>{@link DemoMain}</li>
  * </ul>
@@ -70,9 +68,9 @@ import spel.Demo;
  * <li>{@link NewTest}</li>
  * <li>{@link Samosa}</li>
  * <li>{@link Pepsi}</li>
- * <li>{@link lifecycleByBean.Test}</li>
- * <li>{@link lifecycle.Example}</li>
- * <li>{@link lifecycle.NewTest}</li>
+ * <li>{@link h_lifecycleByBean.Test}</li>
+ * <li>{@link h_lifecycle.Example}</li>
+ * <li>{@link h_lifecycle.NewTest}</li>
  * </ul>
  *
  * <h2>8. Reference Injection</h2>
@@ -85,7 +83,7 @@ import spel.Demo;
  * <h2>9. SpEL (Spring Expression Language)</h2>
  * <ul>
  * <li>{@link Demo}</li>
- * <li>{@link spel.Test}</li>
+ * <li>{@link j_spel.Test}</li>
  * </ul>
  *
  * <h2>10. Standalone Collections</h2>
@@ -96,8 +94,8 @@ import spel.Demo;
  *
  * <h2>11. Stereotype Annotations</h2>
  * <ul>
- * <li>{@link sterotype.Student}</li>
- * <li>{@link sterotype.Test}</li>
+ * <li>{@link k_sterotype.Student}</li>
+ * <li>{@link k_sterotype.Test}</li>
  * </ul>
  *
  * <h2>12. XML to Java Object (JAXB)</h2>

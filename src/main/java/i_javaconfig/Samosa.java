@@ -1,0 +1,7 @@
+package i_javaconfig;
+
+public class Samosa {
+	public void display() {
+		System.out.println("My Price is Little High");
+	}
+}
