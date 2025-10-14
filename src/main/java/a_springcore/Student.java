@@ -2,6 +2,7 @@ package a_springcore;
 
 // This is acting as 
 // Is this a POJO or JavaBean ? POJO
+
 public class Student {
 	private int studentId;
 	private String studentName;
