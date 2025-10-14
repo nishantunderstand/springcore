@@ -12,8 +12,8 @@ import h_lifecycleByAnnotation.NewTest;
 import h_lifecycleByBean.Pepsi;
 import h_lifecycleByBean.Samosa;
 import i_javaconfig.JavaConfig;
-import ref.A;
-import ref.B;
+import l_reference.A;
+import l_reference.B;
 
 /**
  * === Spring Project Table of Contents ===
@@ -77,7 +77,7 @@ import ref.B;
  * <ul>
  * <li>{@link A}</li>
  * <li>{@link B}</li>
- * <li>{@link ref.Test}</li>
+ * <li>{@link l_reference.Test}</li>
  * </ul>
  *
  * <h2>9. SpEL (Spring Expression Language)</h2>

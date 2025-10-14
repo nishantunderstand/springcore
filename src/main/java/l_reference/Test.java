@@ -1,4 +1,4 @@
-package ref;
+package l_reference;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
@@ -9,7 +9,7 @@ public class Test {
 	public static void main(String[] args) {
 
 		ApplicationContext context = 
-				new ClassPathXmlApplicationContext("ref/refconfig.xml");
+				new ClassPathXmlApplicationContext("ref-config.xml");
 		B b = (B) context.getBean("bref");
 		System.out.println(b);
 

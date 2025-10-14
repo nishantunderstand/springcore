@@ -1,0 +1,123 @@
++---src
+|   +---main
+|   |   +---java
+|   |   |   +---a_springcore
+|   |   |   |       Client.java
+|   |   |   |       config.xml
+|   |   |   |       Student.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   +---b_collections
+|   |   |   |       collectionconfig.xml
+|   |   |   |       Emp.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   +---c_alonecollections
+|   |   |   |       aloneconfig.xml
+|   |   |   |       Person.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   +---d_collectionsjavaBased
+|   |   |   |       AppConfig.java
+|   |   |   |       Client.java
+|   |   |   |       Course.java
+|   |   |   |       Student.java
+|   |   |   |       
+|   |   |   +---e1_collectionsautowired
+|   |   |   |       AppConfig.java
+|   |   |   |       MainApp.java
+|   |   |   |       Person.java
+|   |   |   |       
+|   |   |   +---e2_collectionsautowired
+|   |   |   |       AppConfig.java
+|   |   |   |       Client.java
+|   |   |   |       Person.java
+|   |   |   |       
+|   |   |   +---f_ConstructorInjection
+|   |   |   |       Certi.java
+|   |   |   |       Person.java
+|   |   |   |       Test.java
+|   |   |   |       TestWithTryAutocloseable_1.java
+|   |   |   |       TestWithTryAutocloseable_2.java
+|   |   |   |       
+|   |   |   +---f_ConstructorInjectionAmbiguityProblem
+|   |   |   |       Addition.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   +---g_autowire
+|   |   |   |       Address.java
+|   |   |   |       autoconfig.xml
+|   |   |   |       Emp.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   +---g_autowire_annotation
+|   |   |   |       Address.java
+|   |   |   |       autoconfig.xml
+|   |   |   |       Emp.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   +---h_lifecycle
+|   |   |   |       Example.java
+|   |   |   |       NewTest.java
+|   |   |   |       
+|   |   |   +---h_lifecycleByAnnotation
+|   |   |   |       Example.java
+|   |   |   |       NewTest.java
+|   |   |   |       
+|   |   |   +---h_lifecycleByBean
+|   |   |   |       Pepsi.java
+|   |   |   |       Samosa.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   +---i_javaconfig
+|   |   |   |       JavaConfig.java
+|   |   |   |       Main.java
+|   |   |   |       Samosa.java
+|   |   |   |       Student.java
+|   |   |   |       
+|   |   |   +---java2xsd
+|   |   |   |       Department.java
+|   |   |   |       Employee.java
+|   |   |   |       ObjectFactory.java
+|   |   |   |       pom.xml
+|   |   |   |       Student.java
+|   |   |   |       
+|   |   |   +---java_Schema
+|   |   |   |       employee.xsd
+|   |   |   |       ObjectFactory.java
+|   |   |   |       Student.java
+|   |   |   |       student.xsd
+|   |   |   |       
+|   |   |   +---j_spel
+|   |   |   |       DemoSpeL.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   +---k_sterotype
+|   |   |   |       Student.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   +---l_reference
+|   |   |   |       A.java
+|   |   |   |       B.java
+|   |   |   |       Test.java
+|   |   |   |       
+|   |   |   \---_toc
+|   |   |           TOC.java
+|   |   |           
+|   |   +---resources
+|   |   |       aloneconfig.xml
+|   |   |       Beans.xml
+|   |   |       ciconfig.xml
+|   |   |       ciconfigambiguity.xml
+|   |   |       collectionconfig.xml
+|   |   |       config.xml
+|   |   |       lifecycle-config.xml
+|   |   |       lifecycleByAnnotation-config.xml
+|   |   |       lifecycleByBean-config.xml
+|   |   |       ref-config.xml
+|   |   |       spel-config.xml
+|   |   |       springcore_config.xml
+|   |   |       sterotype-config.xml
+|   |   |       
+|   |   \---xsd
+|   |           schema1.xsd          

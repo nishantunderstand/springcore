@@ -1,4 +1,4 @@
-package ref;
+package l_reference;
 
 public class A {
 	private int x;
