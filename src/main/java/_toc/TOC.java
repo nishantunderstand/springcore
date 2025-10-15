@@ -100,16 +100,16 @@ import l_reference.B;
  *
  * <h2>12. XML to Java Object (JAXB)</h2>
  * <ul>
- * <li>{@link java2xsd.Student}</li>
- * <li>{@link java2xsd.Employee}</li>
- * <li>{@link java2xsd.Department}</li>
- * <li>{@link java2xsd.ObjectFactory}</li>
+ * <li>{@link n_java2xsd.Student}</li>
+ * <li>{@link n_java2xsd.Employee}</li>
+ * <li>{@link n_java2xsd.Department}</li>
+ * <li>{@link n_java2xsd.ObjectFactory}</li>
  * </ul>
  *
  * <h2>13. Java Schema (XSD)</h2>
  * <ul>
- * <li>{@link java_Schema.Student}</li>
- * <li>{@link java_Schema.ObjectFactory}</li>
+ * <li>{@link m_java_Schema.Student}</li>
+ * <li>{@link m_java_Schema.ObjectFactory}</li>
  * </ul>
  *
  * <p>

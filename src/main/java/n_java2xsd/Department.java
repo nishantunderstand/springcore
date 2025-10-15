@@ -1,4 +1,4 @@
-package java2xsd;
+package n_java2xsd;
 
 import static java.lang.String.format;
 
