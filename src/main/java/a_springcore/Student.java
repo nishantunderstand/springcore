@@ -7,7 +7,8 @@ public class Student {
 	private int studentId;
 	private String studentName;
 	private String studentAddress;
-	
+	 
+	// Getters and Setters omitted for brevity
 	
 	public int getStudentId() {
 		return studentId;

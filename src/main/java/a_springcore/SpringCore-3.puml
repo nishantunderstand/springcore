@@ -1,0 +1,39 @@
+@startuml
+allowmixing
+title Spring Core - XML Bean Configuration Flow with Packages
+
+package "org.springframework.context" {
+  interface AbstractApplicationContext
+  class ClassPathXmlApplicationContext
+}
+
+package "com.example.springcore" {
+  class Student {
+    - id: int
+    - name: String
+    - email: String
+    + getId(): int
+    + setId(id: int): void
+    + getName(): String
+    + setName(name: String): void
+    + getEmail(): String
+    + setEmail(email: String): void
+  }
+
+  class MainApplication {
+    + main(args: String[]): void
+  }
+}
+
+package "src/main/resources" {
+  artifact "springcore-config.xml" <<config file>> as XML
+}
+
+' Relationships
+AbstractApplicationContext <|-- ClassPathXmlApplicationContext
+MainApplication --> ClassPathXmlApplicationContext : loads config file
+ClassPathXmlApplicationContext --> XML : reads bean definitions
+XML --> Student : sets id, name, email
+MainApplication --> Student : retrieves bean
+
+@enduml

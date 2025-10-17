@@ -1,0 +1,25 @@
+@startuml
+title Spring Core
+
+class Student {
+  - id: int
+  - name: String
+  - email: String
+  + getId(): int
+  + setName(name: String): void
+  + getName(): String
+}
+
+class MainApplication {
+  + main(args: String[]): void
+}
+
+interface ApplicationContext
+class ClassPathXmlApplicationContext
+
+ApplicationContext <|-- ClassPathXmlApplicationContext
+
+MainApplication --> ClassPathXmlApplicationContext
+ClassPathXmlApplicationContext ..> Student : creates bean
+MainApplication --> Student : uses bean
+@enduml
