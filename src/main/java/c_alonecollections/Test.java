@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 	public static void main(String[] args) {
 		//ApplicationContext context = new ClassPathXmlApplicationContext("springcore/standalone/collections/aloneconfig.xml");
-		ApplicationContext context = new ClassPathXmlApplicationContext("aloneconfig.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("standalone-config.xml");
 
 		Person person1 = (Person) context.getBean("person1");
 		
@@ -35,8 +35,6 @@ public class Test {
 
 /*
  * Person person2 = (Person) context.getBean("person2");
- * System.out.println(person2); System.out.println(person2.getClass());
- * 
- * 
- * 
+ * System.out.println(person2); 
+ * System.out.println(person2.getClass());
  */

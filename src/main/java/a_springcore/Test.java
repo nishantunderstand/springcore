@@ -13,7 +13,8 @@ public class Test {
     // Paste the config.xml in resources Folder
     // It will Automatically read it.
 
-    ApplicationContext context = new ClassPathXmlApplicationContext("springcore-config.xml");
+    ApplicationContext context = 
+         new ClassPathXmlApplicationContext("springcore-config.xml");
 
     // This is way of creating Object of Student.
     // You can create as many object, as you want
