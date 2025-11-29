@@ -5,6 +5,6 @@ tree /F /A                    # Files + ASCII format
 tree C:\Path /F               # Specific path with files
 tree /F > structure.txt       # Save to file
 tree /A > structure.txt       # Save to file
-tree /F /A > structure.txt       # Save to file
+tree /F /A > structure.txt    # Save to file
 
 
